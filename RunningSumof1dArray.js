@@ -4,11 +4,11 @@
  */
 var runningSum = function(nums) 
 {
-    arr=new Array();
-    arr[0]=nums[0];
-    for(var i=0; i<nums.length-1; i++)
+    var sum=0;
+    for(var i=0; i<nums.length; i++)
         {
-            arr[i+1]=arr[i]+nums[i+1];
+           sum+=nums[i];
+            nums[i]=sum;
         }
-    return arr;
+    return nums;
 };
